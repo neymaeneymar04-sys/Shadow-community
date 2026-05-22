@@ -12,9 +12,6 @@ const client = new Client({
     intents: [GatewayIntentBits.Guilds]
 });
 
-// NOVO TOKEN
-const TOKEN = '';
-
 // ID DO CARGO
 const ROLE_ID = '1507158580053283019';
 
@@ -75,4 +72,4 @@ client.on(Events.InteractionCreate, async interaction => {
     }
 });
 
-client.login(TOKEN);
+client.login(process.env.DISCORD_TOKEN);
